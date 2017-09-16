@@ -1,0 +1,52 @@
+---
+title: "RMarkdown-hw01"
+output: 
+  github_document 
+    keep_md: yes
+---
+
+library(tidyverse)
+library(gapminder)
+
+gapminder
+head(gapminder)
+tail(gapminder)
+str(gapminder)
+summary(gapminder)
+glimpse(gapminder)
+as.tibble(gapminder)
+
+
+plot(lifeExp ~ year, gapminder)
+typeof(TRUE)
+
+gapminder$country
+diag(5)
+
+```{r}
+plot (lifeExp ~ year, gapminder)
+```
+
+```{r}
+p <- ggplot(filter(gapminder, country == "Chile"),
+            aes(x = year, y = gdpPercap))
+p <- p + scale_x_log10()
+p + geom_point()
+```
+
+```{r}
+str(gapminder$country)
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+
