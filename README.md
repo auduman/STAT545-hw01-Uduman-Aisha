@@ -15,7 +15,7 @@
 
 #### This is Kaaya, my super-mutt of a dog. 
 
-![alt text](/Users/aisha/Desktop/2017/STAT 545/STAT545hw01/IMG.9261.jpg)
+![alt text](https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/12573948_10204664029514181_6049407236485901812_n.jpg?oh=3ebf1e5f9141c7720fc1a2d56201cf7d&oe=5A525E73)
 
 She was adopted from Prince Albert National Park in northern Saskatchewan, and turned out to be pregnant! She was an awesome mum and regularly visits her pups. 
 
