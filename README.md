@@ -28,4 +28,8 @@ She was adopted from Prince Albert National Park in northern Saskatchewan, and t
 - Judo 
 - Jazz 
 
+#### Reporting my process
 
+This is my first time using R, Git, Github etc. so it's a steep learning curve. I made changes to this README.md file using R, editing locally, then saving, committing and pushing to Github. For the R Markdown document I went through what we learned in class, and made some slight changes to explore other tools and processes I could do in R.
+
+Issues I had were making the images smaller in size and isolating a country out of the gapminder data - I tried to look at just Chile but errors kept coming up. 
