@@ -1,34 +1,71 @@
-# Gapminder-hw01
-Aisha Uduman  
-9/18/2017  
+Gapminder-hw01
+================
+Aisha Uduman
+9/18/2017
 
+R Markdown for Homework 1
+=========================
 
+Exploring gapminder.
 
-## R Markdown
+-   Polish and extend R Markdown doc from Sept 14 class
+-   Render it to the github\_document output format
+-   Commit both .Rmd and .md files and push them to Github
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-```r
-summary(cars)
+``` r
+library(gapminder)
+library(tidyverse)
 ```
 
+    ## Loading tidyverse: ggplot2
+    ## Loading tidyverse: tibble
+    ## Loading tidyverse: tidyr
+    ## Loading tidyverse: readr
+    ## Loading tidyverse: purrr
+    ## Loading tidyverse: dplyr
+
+    ## Conflicts with tidy packages ----------------------------------------------
+
+    ## filter(): dplyr, stats
+    ## lag():    dplyr, stats
+
+``` r
+p <- ggplot(filter(gapminder, continent != "Oceania"),
+            aes(x = gdpPercap, y = lifeExp)) # just initializes
+p <- p + scale_x_log10() # log the x axis the right way
+p + geom_point()
 ```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
+
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+
+``` r
+table(gapminder$continent)
 ```
 
-## Including Plots
+    ## 
+    ##   Africa Americas     Asia   Europe  Oceania 
+    ##      624      300      396      360       24
 
-You can also embed plots, for example:
+``` r
+barplot(table(gapminder$continent))
+```
 
-![](Gapminder-hw01_files/figure-html/pressure-1.png)<!-- -->
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+``` r
+p <- ggplot(filter(gapminder, country == "Chile"),
+            aes(x = gdpPercap, y = year)) # just initializes
+p <- p + scale_x_log10() # log the x axis the right way
+p + geom_point()
+```
+
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+
+``` r
+p <- ggplot(filter(gapminder, country == "Vietnam"),
+            aes(x = gdpPercap, y = lifeExp)) # just initializes
+p <- p + scale_x_log10() # log the x axis the right way
+p + geom_point()
+```
+
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-7-1.png)
