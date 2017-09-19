@@ -5,23 +5,7 @@ output:
     keep_md: yes
 ---
 
-library(tidyverse)
-library(gapminder)
 
-gapminder
-head(gapminder)
-tail(gapminder)
-str(gapminder)
-summary(gapminder)
-glimpse(gapminder)
-as.tibble(gapminder)
-
-
-plot(lifeExp ~ year, gapminder)
-typeof(TRUE)
-
-gapminder$country
-diag(5)
 
 ```{r}
 plot (lifeExp ~ year, gapminder)
