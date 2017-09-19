@@ -27,8 +27,12 @@ p + geom_point()
 
 ```{r}
 table(gapminder$continent)
+```
+
+```{r}
 barplot(table(gapminder$continent))
 ```
+
 
 ```{r}
 p <- ggplot(filter(gapminder, country == "Chile"),
