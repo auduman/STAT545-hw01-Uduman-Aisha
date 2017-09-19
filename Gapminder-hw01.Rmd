@@ -3,9 +3,9 @@ title: "Gapminder-hw01"
 author: "Aisha Uduman"
 date: "9/18/2017"
 output:
+  html_document: default
   github_document:
     keep_md: yes
-  html_document: default
 ---
 
 #R Markdown for Homework 1 
