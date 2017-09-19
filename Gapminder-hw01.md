@@ -36,7 +36,7 @@ p <- p + scale_x_log10() # log the x axis the right way
 p + geom_point()
 ```
 
-![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
 
 ``` r
 table(gapminder$continent)
@@ -50,7 +50,7 @@ table(gapminder$continent)
 barplot(table(gapminder$continent))
 ```
 
-![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
 
 ``` r
 p <- ggplot(filter(gapminder, country == "Chile"),
@@ -59,7 +59,7 @@ p <- p + scale_x_log10() # log the x axis the right way
 p + geom_point()
 ```
 
-![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
 ``` r
 p <- ggplot(filter(gapminder, country == "Vietnam"),
@@ -68,4 +68,4 @@ p <- p + scale_x_log10() # log the x axis the right way
 p + geom_point()
 ```
 
-![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-7-1.png)
+![](Gapminder-hw01_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)

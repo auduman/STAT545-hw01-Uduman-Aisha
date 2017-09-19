@@ -5,6 +5,7 @@ date: "9/18/2017"
 output: github_document
 ---
 
+
 #R Markdown for Homework 1 
 
 Exploring gapminder. 
@@ -14,11 +15,11 @@ Exploring gapminder.
 - Commit both .Rmd and .md files and push them to Github
 
 
-install.packages("gapminder")
-install.packages("tidyverse")
-
+```{r}
 library(gapminder)
 library(tidyverse)
+```
+
 
 
 ```{r}
